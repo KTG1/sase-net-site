@@ -93,7 +93,20 @@ h2 em { color: #147f7b; font-style: normal; }
 .visual-core circle:nth-child(2) { fill: var(--panel); }
 .visual-core text { fill: var(--cyan); text-anchor: middle; font: 600 17px var(--display); }
 .standard-strip { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(7, 1fr); margin: 50px calc(var(--gutter) * -1) -90px; border-top: 1px solid var(--light-line); }
-.standard-strip span { padding: 22px 12px; color: #b9cdd1; border-right: 1px solid var(--light-line); font: 500 10px var(--mono); letter-spacing: .08em; text-align: center; }
+.standard-strip button { position: relative; min-height: 66px; padding: 22px 12px; color: #b9cdd1; background: transparent; border: 0; border-right: 1px solid var(--light-line); font: 500 10px var(--mono); letter-spacing: .08em; text-align: center; cursor: help; transition: color .2s, background .2s; }
+.standard-strip button:last-child { border-right: 0; }
+.standard-strip button::after { position: absolute; right: 12px; bottom: 9px; width: 12px; height: 1px; content: ""; background: var(--cyan); opacity: 0; transform: scaleX(0); transform-origin: right; transition: opacity .2s, transform .2s; }
+.standard-strip button:hover, .standard-strip button:focus-visible { color: var(--navy); background: var(--cyan); }
+.standard-strip button:hover::after, .standard-strip button:focus-visible::after { opacity: 1; transform: scaleX(1); }
+.capability-popover { position: absolute; z-index: 10; bottom: calc(100% + 14px); left: 50%; width: min(330px, 78vw); padding: 18px 20px; color: #b9cdd1; background: var(--panel); border: 1px solid rgba(88, 239, 227, .42); box-shadow: 0 20px 50px rgba(0, 0, 0, .32); font: 400 11px/1.65 var(--body); letter-spacing: 0; text-align: left; pointer-events: none; opacity: 0; transform: translate(-50%, 10px); transition: opacity .2s, transform .2s; }
+.capability-popover::after { position: absolute; top: 100%; left: 50%; width: 9px; height: 9px; content: ""; background: var(--panel); border-right: 1px solid rgba(88, 239, 227, .42); border-bottom: 1px solid rgba(88, 239, 227, .42); transform: translate(-50%, -5px) rotate(45deg); }
+.capability-popover strong { display: block; margin-bottom: 8px; color: var(--white); font: 600 22px/.95 var(--display); text-transform: uppercase; }
+.capability-popover b { color: var(--cyan); font: 500 8px var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+.standard-strip button:hover .capability-popover, .standard-strip button:focus-visible .capability-popover { opacity: 1; transform: translate(-50%, 0); }
+.standard-strip button:first-child .capability-popover { left: 12px; transform: translate(0, 10px); }
+.standard-strip button:first-child:hover .capability-popover, .standard-strip button:first-child:focus-visible .capability-popover { transform: translate(0, 0); }
+.standard-strip button:last-child .capability-popover { right: 12px; left: auto; transform: translate(0, 10px); }
+.standard-strip button:last-child:hover .capability-popover, .standard-strip button:last-child:focus-visible .capability-popover { transform: translate(0, 0); }
 
 .context-heading { display: grid; grid-template-columns: 1.25fr .75fr; gap: 8vw; align-items: end; margin-bottom: 76px; }
 .definition-strip { display: grid; grid-template-columns: repeat(3, 1fr); margin-bottom: 22px; border: 1px solid var(--dark-line); }
@@ -406,7 +419,7 @@ h2 em { color: #147f7b; font-style: normal; }
   .hero-visual svg { width: 130%; margin-left: -15%; }
   .visual-foot span:nth-child(2) { display: none; }
   .standard-strip { grid-template-columns: repeat(4, 1fr); margin: 35px -20px -75px; }
-  .standard-strip span:nth-child(n+5) { display: none; }
+  .standard-strip button:nth-child(n+5) { display: none; }
   .section-title, .section-heading h2, .context-heading h2, .architecture-copy h2, .resource-panel h2, .newsletter h2 { font-size: 51px; }
   .definition-strip, .context-grid, .testimonial-grid, .expert-grid, .stats-grid, .mission-grid, .compare-panel, .vpn-compare, .resource-links { grid-template-columns: 1fr; }
   .review-stats, .review-video-grid { grid-template-columns: 1fr; }
