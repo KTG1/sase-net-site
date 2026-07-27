@@ -147,9 +147,10 @@ h2 em { color: #147f7b; font-style: normal; }
 .review-tabs button:last-child { border: 0; }
 .review-tabs button[aria-selected="true"] { color: var(--navy); background: var(--cyan); }
 .review-panel[hidden] { display: none; }
-.review-video-grid { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--light-line); border-top: 0; }
-.video-review { min-height: 480px; padding: 26px; display: flex; flex-direction: column; border-right: 1px solid var(--light-line); }
-.video-review:last-child { border: 0; }
+.review-video-grid { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--light-line); border-top: 0; }
+.video-review { min-height: 420px; padding: 26px; display: flex; flex-direction: column; border-right: 1px solid var(--light-line); }
+.video-review:nth-child(-n+3) { border-bottom: 1px solid var(--light-line); }
+.video-review:nth-child(3n) { border-right: 0; }
 .video-review-blue { color: var(--navy); background: var(--blue); }
 .video-review-visual { position: relative; flex: 1; min-height: 250px; display: grid; place-items: center; overflow: hidden; }
 .video-review-visual i { position: absolute; width: 48%; aspect-ratio: 1; border: 1px solid rgba(88,239,227,.3); border-radius: 50%; }
@@ -161,9 +162,10 @@ h2 em { color: #147f7b; font-style: normal; }
 .video-review p { margin: 0; color: #a9c0c5; font: 400 9px var(--mono); text-transform: uppercase; }
 .video-review-blue p { color: rgba(7,19,29,.66); }
 .review-panel.testimonial-grid { margin-top: 0; }
-.testimonial-grid { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 72px; border: 1px solid var(--light-line); }
+.testimonial-grid { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 72px; border: 1px solid var(--light-line); }
 .testimonial-grid blockquote { min-height: 330px; margin: 0; padding: 26px; display: flex; flex-direction: column; border-right: 1px solid var(--light-line); }
-.testimonial-grid blockquote:last-child { border: 0; }
+.testimonial-grid blockquote:nth-child(-n+3) { border-bottom: 1px solid var(--light-line); }
+.testimonial-grid blockquote:nth-child(3n) { border-right: 0; }
 .testimonial-grid span { color: var(--cyan); font: 500 8px var(--mono); letter-spacing: .08em; }
 .testimonial-grid p { margin: auto 0 30px; font: 500 clamp(25px, 2.2vw, 34px)/1.05 var(--display); text-transform: uppercase; }
 .testimonial-grid footer { color: #9db4ba; font: 400 9px var(--mono); text-transform: uppercase; }
@@ -382,6 +384,13 @@ h2 em { color: #147f7b; font-style: normal; }
   .testimonial-grid blockquote:nth-child(2), .expert-card:nth-child(2), .stats-grid article:nth-child(2), .mission-grid article:nth-child(2) { border-right: 0; }
   .testimonial-grid blockquote:nth-child(-n+2), .expert-card:nth-child(-n+2), .stats-grid article:nth-child(-n+2), .mission-grid article:nth-child(-n+2) { border-bottom: 1px solid var(--dark-line); }
   .section-dark .testimonial-grid blockquote:nth-child(-n+2) { border-bottom-color: var(--light-line); }
+  .review-video-grid { grid-template-columns: 1fr 1fr; }
+  .video-review:nth-child(3n) { border-right: 1px solid var(--light-line); }
+  .video-review:nth-child(2n) { border-right: 0; }
+  .video-review:nth-child(-n+4) { border-bottom: 1px solid var(--light-line); }
+  .testimonial-grid blockquote:nth-child(3n) { border-right: 1px solid var(--light-line); }
+  .testimonial-grid blockquote:nth-child(2n) { border-right: 0; }
+  .testimonial-grid blockquote:nth-child(-n+4) { border-bottom: 1px solid var(--light-line); }
   .review-stats { grid-template-columns: 1fr 1fr; }
   .review-stats article:nth-child(2) { border-right: 0; }
   .review-stats article:nth-child(-n+2) { border-bottom: 1px solid var(--light-line); }
@@ -425,6 +434,8 @@ h2 em { color: #147f7b; font-style: normal; }
   .review-stats, .review-video-grid { grid-template-columns: 1fr; }
   .review-stats article, .video-review { border-right: 0; border-bottom: 1px solid var(--light-line); }
   .review-stats article:last-child, .video-review:last-child { grid-column: 1; border-bottom: 0; }
+  .video-review:nth-child(n), .testimonial-grid blockquote:nth-child(n) { border-right: 0; border-bottom: 1px solid var(--light-line); }
+  .video-review:last-child, .testimonial-grid blockquote:last-child { border-bottom: 0; }
   .review-stats article > p { font-size: 30px; }
   .review-tabs { grid-template-columns: 1fr; }
   .review-tabs button { border-right: 0; border-bottom: 1px solid var(--light-line); }
