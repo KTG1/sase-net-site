@@ -21,6 +21,15 @@ nav?.addEventListener('click', (event) => {
 const year = document.querySelector('[data-year]');
 if (year) year.textContent = new Date().getFullYear();
 
+const reviewTabs = [...document.querySelectorAll('[data-review-tab]')];
+const reviewPanels = [...document.querySelectorAll('[data-review-panel]')];
+reviewTabs.forEach((button) => {
+  button.addEventListener('click', () => {
+    reviewTabs.forEach((other) => other.setAttribute('aria-selected', String(other === button)));
+    reviewPanels.forEach((panel) => panel.hidden = panel.dataset.reviewPanel !== button.dataset.reviewTab);
+  });
+});
+
 document.querySelectorAll('.framework-list details, .attribute-faq details, .playbook-list details, .resource-accordions details').forEach((item) => {
   item.addEventListener('toggle', () => {
     if (!item.open) return;
