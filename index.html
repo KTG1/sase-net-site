@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="SASE.Net unifies networking and security at the edge, giving every user fast, identity-aware access from anywhere.">
-  <meta name="theme-color" content="#06131d">
-  <title>SASE.Net — One secure edge for every connection</title>
+  <meta name="description" content="SASE.Net brings networking and security into one cloud-native edge for users, branches, applications, and data.">
+  <meta name="theme-color" content="#07131d">
+  <title>SASE.Net — The complete guide to a secure service edge</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
@@ -15,118 +15,133 @@
     <a class="brand" href="#top" aria-label="SASE.Net home"><span class="brand-mark">S/</span><span>SASE.NET</span></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span class="sr-only">Menu</span></button>
     <nav id="site-nav" aria-label="Primary navigation">
-      <a href="#platform">Platform</a><a href="#architecture">Architecture</a><a href="#experts">Experts</a><a href="#resources">Resources</a>
-      <a class="button button-small" href="#contact">Build your edge <span>↗</span></a>
+      <a href="#why">Why SASE</a><a href="#architecture">Architecture</a><a href="#framework">Framework</a><a href="#experts">Experts</a>
+      <a class="button button-small" href="#contact">Plan your edge <span>↗</span></a>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero" id="top">
+    <section class="hero section-dark" id="top">
       <div class="hero-copy reveal">
-        <p class="kicker"><span class="status-dot"></span> The secure edge is online</p>
-        <h1>Every connection.<br><em>One secure edge.</em></h1>
-        <p class="hero-dek">SASE.Net brings networking and security into one cloud-native control plane—so people connect faster, policies follow identity, and your team sees everything.</p>
-        <div class="hero-actions"><a class="button" href="#contact">Design your SASE <span>↗</span></a><a class="text-link" href="#platform">Explore the platform <span>↓</span></a></div>
+        <p class="eyebrow"><span class="status-dot"></span> Secure access service edge / field guide</p>
+        <h1>One edge.<br><em>Every connection.</em></h1>
+        <p class="hero-dek">Bring users, branches, applications, and data into one cloud-native security and networking architecture—without sending work back through the data center.</p>
+        <div class="hero-actions"><a class="button" href="#contact">Design your SASE <span>↗</span></a><a class="text-link" href="#why">Read the field guide <span>↓</span></a></div>
       </div>
-      <div class="edge-map reveal" aria-label="Live global SASE edge visualization">
-        <div class="map-head"><span>GLOBAL EDGE / LIVE</span><span class="live">99.999% AVAILABLE</span></div>
-        <svg viewBox="0 0 760 560" role="img" aria-label="Users and offices connected through secure global points of presence">
-          <defs><filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><linearGradient id="route" x1="0" x2="1"><stop stop-color="#43e6dc"/><stop offset="1" stop-color="#5c8dff"/></linearGradient></defs>
-          <g class="grid-lines"><path d="M0 80h760M0 160h760M0 240h760M0 320h760M0 400h760M0 480h760M95 0v560M190 0v560M285 0v560M380 0v560M475 0v560M570 0v560M665 0v560"/></g>
-          <g class="routes"><path d="M96 150C190 110 240 275 347 249S485 110 644 148"/><path d="M98 420C215 459 228 321 347 249S518 380 653 405"/><path d="M347 249C420 229 500 255 577 281"/></g>
-          <g class="nodes">
-            <g transform="translate(347 249)" class="core"><circle r="60"/><circle r="39"/><path d="M-15 0h30M0-15v30"/><text y="91">UNIFIED POLICY</text></g>
-            <g transform="translate(96 150)"><circle r="12"/><text x="20" y="5">LONDON / 12ms</text></g><g transform="translate(644 148)"><circle r="12"/><text x="-20" y="-20" text-anchor="end">SINGAPORE / 18ms</text></g>
-            <g transform="translate(98 420)"><circle r="12"/><text x="20" y="5">SÃO PAULO / 21ms</text></g><g transform="translate(653 405)"><circle r="12"/><text x="-20" y="5" text-anchor="end">SYDNEY / 16ms</text></g><g transform="translate(577 281)"><circle r="9"/><text x="18" y="5">ISTANBUL / 9ms</text></g>
-          </g>
-          <g class="packets"><circle r="4"><animateMotion dur="4s" repeatCount="indefinite" path="M96 150C190 110 240 275 347 249S485 110 644 148"/></circle><circle r="4"><animateMotion dur="5s" begin="-2s" repeatCount="indefinite" path="M98 420C215 459 228 321 347 249S518 380 653 405"/></circle></g>
+      <div class="hero-visual reveal" aria-label="Global secure edge network illustration">
+        <div class="visual-head"><span>EDGE TOPOLOGY / LIVE</span><span>POLICY SYNCED</span></div>
+        <svg viewBox="0 0 700 620" role="img" aria-label="A unified security policy connecting users, sites, applications, and data">
+          <defs><radialGradient id="core-fill"><stop stop-color="#58efe3" stop-opacity=".32"/><stop offset="1" stop-color="#58efe3" stop-opacity="0"/></radialGradient></defs>
+          <g class="visual-grid"><path d="M0 90h700M0 180h700M0 270h700M0 360h700M0 450h700M0 540h700M100 0v620M200 0v620M300 0v620M400 0v620M500 0v620M600 0v620"/></g>
+          <g class="visual-routes"><path d="M95 160C210 110 238 305 350 302S500 110 612 165"/><path d="M102 478C205 510 248 340 350 302S505 440 610 478"/><path d="M350 302C440 292 510 300 624 310"/></g>
+          <g class="visual-nodes"><g transform="translate(350 302)" class="visual-core"><circle r="92"/><circle r="55"/><text y="-3">ONE</text><text y="28">POLICY</text></g><g transform="translate(95 160)"><circle r="13"/><text x="22" y="4">USERS</text></g><g transform="translate(612 165)"><circle r="13"/><text x="-22" y="4" text-anchor="end">BRANCHES</text></g><g transform="translate(102 478)"><circle r="13"/><text x="22" y="4">DATA</text></g><g transform="translate(610 478)"><circle r="13"/><text x="-22" y="4" text-anchor="end">CLOUD</text></g><g transform="translate(624 310)"><circle r="9"/><text x="-20" y="-19" text-anchor="end">PRIVATE APPS</text></g></g>
         </svg>
-        <div class="map-legend"><span><i></i> Encrypted route</span><span><i></i> Active PoP</span><span>05 regions shown</span></div>
+        <div class="visual-foot"><span>Identity-aware</span><span>Single-pass inspection</span><span>Nearest edge</span></div>
       </div>
-      <div class="trust-strip reveal"><p>Built around the standards modern teams trust</p><div><span>ZERO TRUST</span><span>SD-WAN</span><span>SWG</span><span>CASB</span><span>FWaaS</span><span>DLP</span></div></div>
+      <div class="standard-strip reveal"><span>ZTNA</span><span>SD-WAN</span><span>SWG</span><span>CASB</span><span>FWaaS</span><span>DLP</span><span>DEM</span></div>
     </section>
 
-    <section class="proof section" aria-label="Platform outcomes">
-      <div class="section-label reveal">THE NETWORK HAS CHANGED</div>
-      <div class="proof-intro reveal"><h2>Security built for where work happens <em>now.</em></h2><p>Apps moved to the cloud. People moved everywhere. SASE replaces stitched-together appliances with policy delivered from the closest edge.</p></div>
-      <div class="metrics reveal">
-        <article><strong>01</strong><span>Control plane</span><p>One place to define access, networking, and inspection.</p></article>
-        <article><strong>&lt;20<small>ms</small></strong><span>Target edge latency</span><p>Traffic is inspected close to the user—not backhauled.</p></article>
-        <article><strong>360°</strong><span>Visibility</span><p>Every user, app, device, and policy decision in context.</p></article>
-        <article><strong>24/7</strong><span>Protection</span><p>Threat intelligence follows every connection.</p></article>
+    <section class="context section-light" id="why" data-step="01">
+      <div class="section-kicker reveal">Why the edge changed</div>
+      <div class="context-heading reveal"><h2>Work moved everywhere.<br><em>Security should too.</em></h2><p>Applications left the data center. People work across homes, branches, airports, and cloud regions. SASE makes policy portable—following identity and context to the nearest point of presence.</p></div>
+      <div class="context-grid">
+        <article class="media-card reveal"><span class="card-label">SASE explained / 04:12</span><div class="media-signal"><i></i><i></i><i></i><b>▶</b></div><h3>From perimeter to service edge</h3><p>A visual briefing on why networking and security now converge in the cloud.</p></article>
+        <article class="media-card media-card-blue reveal"><span class="card-label">Architecture review / 06:40</span><div class="mini-map"><span>USER</span><i></i><b>EDGE</b><i></i><span>APP</span></div><h3>One pass, shared context</h3><p>See how a unified policy engine evaluates traffic once and acts with full context.</p></article>
+      </div>
+      <p class="context-note reveal">The result is a simpler operating model: fewer policy seams, faster application paths, and one source of truth for every access decision.</p>
+    </section>
+
+    <section class="trust section-dark" data-step="02">
+      <div class="section-kicker reveal">Trust, in practice</div>
+      <h2 class="section-title reveal">What security teams expect<br>from a <em>modern edge.</em></h2>
+      <div class="testimonial-grid">
+        <blockquote class="reveal"><span>01 / GLOBAL RETAIL</span><p>“Policy should follow the user, not the office they happen to be in.”</p><footer>Identity & access lead</footer></blockquote>
+        <blockquote class="reveal"><span>02 / FINANCIAL SERVICES</span><p>“We need a single view of performance and protection across every region.”</p><footer>VP, infrastructure</footer></blockquote>
+        <blockquote class="reveal"><span>03 / HEALTH TECHNOLOGY</span><p>“Cloud adoption works when controls arrive as quickly as applications do.”</p><footer>Security architect</footer></blockquote>
+        <blockquote class="reveal"><span>04 / MANUFACTURING</span><p>“Branches should connect in hours, with the same policy as headquarters.”</p><footer>Network operations</footer></blockquote>
       </div>
     </section>
 
-    <section class="experts section" id="experts">
-      <div class="section-label reveal">EXPERTISE AT THE EDGE</div>
-      <div class="section-heading reveal"><h2>Built with people who know networks <em>under pressure.</em></h2><p>Security architects, operators, and threat researchers shape every part of the platform.</p></div>
+    <section class="experts section-light" id="experts" data-step="03">
+      <div class="section-kicker reveal">People behind the platform</div>
+      <div class="section-heading reveal"><h2>Security expertise,<br><em>built into the edge.</em></h2><p>SASE is a shared discipline. Network engineers, security architects, threat researchers, and customer teams shape one operating model together.</p></div>
       <div class="expert-grid">
-        <article class="expert-card reveal"><div class="avatar">MK</div><p class="role">CHIEF SECURITY ARCHITECT</p><h3>Maya Kim</h3><div class="bio"><p>Designs identity-first architectures for distributed enterprises.</p><span>ZTNA / IAM / POLICY</span></div></article>
-        <article class="expert-card reveal"><div class="avatar">JO</div><p class="role">GLOBAL NETWORKS</p><h3>Jonas Okafor</h3><div class="bio"><p>Builds resilient edge fabrics across high-growth networks.</p><span>SD-WAN / BGP / EDGE</span></div></article>
-        <article class="expert-card reveal"><div class="avatar">AL</div><p class="role">THREAT RESEARCH</p><h3>Amelia Lin</h3><div class="bio"><p>Turns emerging attack patterns into real-time defenses.</p><span>TI / MALWARE / SOC</span></div></article>
-        <article class="expert-card reveal"><div class="avatar">RS</div><p class="role">CUSTOMER ENGINEERING</p><h3>Rafael Silva</h3><div class="bio"><p>Guides global teams from legacy stacks to one secure edge.</p><span>MIGRATION / SRE / DLP</span></div></article>
+        <article class="expert-card reveal"><div class="expert-portrait">SA<span>01</span></div><p>Security architecture</p><h3>Zero-trust design</h3><small>Identity / policy / applications</small></article>
+        <article class="expert-card reveal"><div class="expert-portrait">NE<span>02</span></div><p>Global networks</p><h3>Edge engineering</h3><small>SD-WAN / routing / resilience</small></article>
+        <article class="expert-card reveal"><div class="expert-portrait">TR<span>03</span></div><p>Threat research</p><h3>Security intelligence</h3><small>Malware / signals / response</small></article>
+        <article class="expert-card reveal"><div class="expert-portrait">CE<span>04</span></div><p>Customer engineering</p><h3>Migration practice</h3><small>Readiness / reliability / data</small></article>
+      </div>
+      <div class="stats-grid reveal"><article><strong>&lt;20<small>ms</small></strong><span>Target edge latency</span></article><article><strong>360°</strong><span>Policy visibility</span></article><article><strong>24/7</strong><span>Engineering support</span></article><article><strong>1</strong><span>Control plane</span></article></div>
+    </section>
+
+    <section class="benefits section-cyan" data-step="04">
+      <div class="section-kicker reveal">Benefits of SASE.Net</div>
+      <div class="section-heading reveal"><h2>Less stack.<br><em>More control.</em></h2><p>Consolidate what used to be separate appliances, consoles, and policy languages into a service delivered close to every user and application.</p></div>
+      <div class="benefit-stage">
+        <div class="benefit-visual reveal"><div class="benefit-core">S/</div><span class="beam beam-a"></span><span class="beam beam-b"></span><span class="beam beam-c"></span><span class="beam beam-d"></span><b class="satellite sat-a">USERS</b><b class="satellite sat-b">SITES</b><b class="satellite sat-c">CLOUD</b><b class="satellite sat-d">DATA</b></div>
+        <div class="benefit-list reveal"><article><span>01</span><h3>One policy language</h3><p>Define access and inspection once, then apply it consistently everywhere.</p></article><article><span>02</span><h3>Direct application paths</h3><p>Connect through the nearest healthy edge instead of backhauling traffic.</p></article><article><span>03</span><h3>Shared security context</h3><p>Identity, device posture, application, and data sensitivity inform one decision.</p></article><article><span>04</span><h3>Operational clarity</h3><p>Use unified telemetry to troubleshoot experience and enforce policy faster.</p></article><article><span>05</span><h3>Elastic capacity</h3><p>Scale cloud-delivered controls without deploying another appliance stack.</p></article></div>
       </div>
     </section>
 
-    <section class="platform section" id="platform">
-      <div class="platform-visual reveal">
-        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div>
-        <div class="platform-core"><span>SASE.NET</span><strong>ONE<br>EDGE</strong></div>
-        <span class="orbit-label label-a">IDENTITY</span><span class="orbit-label label-b">DATA</span><span class="orbit-label label-c">APPS</span><span class="orbit-label label-d">DEVICES</span>
-      </div>
-      <div class="platform-copy">
-        <p class="section-label reveal">WHY SASE.NET</p><h2 class="reveal">Less stack.<br>More <em>control.</em></h2><p class="intro reveal">Bring security and networking together without forcing users through the data center.</p>
-        <div class="benefit-list">
-          <details open class="reveal"><summary><span>01</span>Make identity the perimeter<i></i></summary><p>Grant access to specific applications based on user, device posture, location, and risk—not a place on the network.</p></details>
-          <details class="reveal"><summary><span>02</span>Inspect traffic once<i></i></summary><p>A single-pass security engine applies web, firewall, malware, and data controls without chaining appliances.</p></details>
-          <details class="reveal"><summary><span>03</span>Route around disruption<i></i></summary><p>Application-aware paths continuously select the best-performing connection at every site.</p></details>
-          <details class="reveal"><summary><span>04</span>Operate from one console<i></i></summary><p>Shared policy, telemetry, and change history replace fragmented management across point products.</p></details>
+    <section class="how section-light" data-step="05">
+      <div class="section-kicker reveal">How to use SASE</div>
+      <div class="section-heading reveal"><h2>Adopt by mission.<br><em>Converge by design.</em></h2><p>Start where the operational need is clearest, then bring each use case into the same policy and telemetry plane.</p></div>
+      <div class="mission-grid reveal"><article><b>01</b><span>Remote work</span><p>Replace broad VPN access with application-specific, identity-aware connections.</p></article><article><b>02</b><span>Branch modernization</span><p>Connect locations through lightweight edges and cloud-delivered controls.</p></article><article><b>03</b><span>Cloud adoption</span><p>Govern SaaS usage, data movement, and private application access.</p></article><article><b>04</b><span>Security consolidation</span><p>Move web, firewall, access, and data policy into one inspection path.</p></article></div>
+    </section>
+
+    <section class="attributes section-dark" id="architecture" data-step="06">
+      <div class="section-kicker reveal">Core attributes of SASE</div>
+      <div class="section-heading reveal"><h2>A complete edge is more<br>than a <em>feature list.</em></h2><p>The architecture matters: cloud-native delivery, distributed enforcement, shared context, and continuous verification.</p></div>
+      <div class="attribute-console reveal">
+        <div class="attribute-rail" role="tablist" aria-label="SASE core attributes">
+          <button role="tab" aria-selected="true" data-attribute="zero-trust">Zero Trust Network Access</button><button role="tab" aria-selected="false" data-attribute="identity">Identity-based access control</button><button role="tab" aria-selected="false" data-attribute="web">Secure web gateway</button><button role="tab" aria-selected="false" data-attribute="cloud">Cloud access security broker</button><button role="tab" aria-selected="false" data-attribute="firewall">Firewall as a service</button><button role="tab" aria-selected="false" data-attribute="dlp">Data loss prevention</button><button role="tab" aria-selected="false" data-attribute="threat">Threat intelligence</button><button role="tab" aria-selected="false" data-attribute="policy">Unified policy engine</button><button role="tab" aria-selected="false" data-attribute="visibility">End-to-end visibility</button><button role="tab" aria-selected="false" data-attribute="performance">Performance optimization</button><button role="tab" aria-selected="false" data-attribute="scalability">Scalability & elasticity</button><button role="tab" aria-selected="false" data-attribute="complexity">Reduced complexity</button>
         </div>
+        <div class="attribute-panel" data-attribute-panel><div class="panel-top"><span>ATTRIBUTE / 01</span><span>ACTIVE</span></div><div class="panel-diagram"><i>IDENTITY</i><b>VERIFY</b><i>APPLICATION</i></div><h3>Zero Trust Network Access</h3><p>Connect an authenticated user to a specific application after evaluating identity, device posture, location, and risk. Trust is continuously reassessed throughout the session.</p><div class="panel-tags"><span>Least privilege</span><span>App-level access</span><span>Continuous trust</span></div></div>
       </div>
     </section>
 
-    <section class="use-cases section">
-      <div class="section-heading reveal"><p class="section-label">HOW TEAMS USE SASE</p><h2>One edge. Different <em>missions.</em></h2></div>
-      <div class="use-grid">
-        <article class="reveal"><span>REMOTE WORK</span><h3>Give people app access, not network access.</h3><p>Replace broad VPN tunnels with fast, identity-aware connections to private and SaaS apps.</p><a href="#contact">Explore ZTNA ↗</a></article>
-        <article class="reveal"><span>BRANCH NETWORKS</span><h3>Open sites without shipping a security stack.</h3><p>Connect branches through lightweight edges and deliver policy from the cloud.</p><a href="#contact">Explore SD-WAN ↗</a></article>
-        <article class="reveal"><span>CLOUD MIGRATION</span><h3>Protect data across every cloud path.</h3><p>See sanctioned and unsanctioned apps, control sensitive data, and reduce shadow IT.</p><a href="#contact">Explore CASB ↗</a></article>
+    <section class="architecture section-light" data-step="07">
+      <div class="section-kicker reveal">SASE architecture with SASE.Net</div>
+      <div class="architecture-map reveal">
+        <div class="architecture-users"><span>REMOTE USER</span><span>BRANCH</span><span>DEVICE</span></div>
+        <div class="architecture-cloud"><small>GLOBAL SERVICE EDGE</small><strong>SASE.NET</strong><div><span>IDENTITY</span><span>ROUTING</span><span>INSPECTION</span><span>DATA POLICY</span></div></div>
+        <div class="architecture-apps"><span>SAAS</span><span>PRIVATE APP</span><span>PUBLIC CLOUD</span></div>
+      </div>
+      <div class="architecture-copy reveal"><h2>One cloud-native<br><em>control plane.</em></h2><p>Traffic enters the closest service edge, where networking and security policy execute in a single pass. Shared telemetry returns to one console, preserving global consistency without centralizing the traffic path.</p><ul><li>Distributed points of presence</li><li>Single-pass policy enforcement</li><li>Application-aware routing</li><li>Unified operations and analytics</li></ul></div>
+    </section>
+
+    <section class="compare section-muted" data-step="08">
+      <div class="section-kicker reveal">Definition and context</div>
+      <h2 class="section-title reveal">SASE, Zero Trust,<br>and <em>SD-WAN.</em></h2>
+      <div class="compare-tabs reveal" role="tablist" aria-label="Compare SASE concepts"><button role="tab" aria-selected="true" data-compare="why">Why it matters</button><button role="tab" aria-selected="false" data-compare="baseline">SASE baseline</button><button role="tab" aria-selected="false" data-compare="use">How to use it</button></div>
+      <div class="compare-panel reveal" data-compare-panel><article><span>SASE</span><p>The cloud-delivered architecture that converges networking and security.</p></article><article><span>Zero Trust</span><p>The access principle: verify explicitly and grant only the access required.</p></article><article><span>SD-WAN</span><p>The networking capability that selects efficient application-aware paths.</p></article></div>
+    </section>
+
+    <section class="framework section-light" id="framework" data-step="09">
+      <div class="section-kicker reveal">Cloud-native framework</div>
+      <div class="section-heading reveal"><h2>The architecture<br><em>under the architecture.</em></h2><p>Each layer reinforces the next. Together they create a service edge that can scale globally while preserving consistent policy.</p></div>
+      <div class="framework-list reveal">
+        <details open><summary><span>01</span>Distributed points of presence<i></i></summary><p>Place inspection and access close to users and applications, reducing latency and regional dependency.</p></details><details><summary><span>02</span>Unified security stack<i></i></summary><p>Combine web, firewall, access, threat, and data controls in a shared single-pass engine.</p></details><details><summary><span>03</span>Context-aware access control<i></i></summary><p>Use identity, device health, behavior, data sensitivity, and location in every policy decision.</p></details><details><summary><span>04</span>Integrated networking and security<i></i></summary><p>Let path selection and security enforcement share application context and performance telemetry.</p></details><details><summary><span>05</span>Global network fabric<i></i></summary><p>Carry traffic across a managed backbone with resilient routing between service edges and applications.</p></details><details><summary><span>06</span>Application-aware routing<i></i></summary><p>Select paths by real-time health and application requirements rather than static network topology.</p></details><details><summary><span>07</span>Edge-based processing<i></i></summary><p>Inspect and enforce close to the source while centralizing policy—not traffic.</p></details><details><summary><span>08</span>Encrypted traffic inspection<i></i></summary><p>Apply consistent controls to encrypted sessions with policy-driven exceptions and privacy safeguards.</p></details><details><summary><span>09</span>Continuous verification<i></i></summary><p>Reassess trust throughout a session as identity, device, and behavior signals change.</p></details><details><summary><span>10</span>Microsegmentation<i></i></summary><p>Limit lateral movement by separating applications, workloads, and user groups through explicit policy.</p></details><details><summary><span>11</span>Single policy engine<i></i></summary><p>Express intent once and distribute it globally with consistent interpretation and change history.</p></details>
       </div>
     </section>
 
-    <section class="architecture section" id="architecture">
-      <div class="architecture-sticky"><p class="section-label">CORE ARCHITECTURE</p><h2>The capabilities of a complete <em>SASE.</em></h2><p>Explore the controls that converge at the edge.</p></div>
-      <div class="capability-list" data-capabilities>
-        <details open><summary><span>01</span><b>Zero Trust Network Access</b><i></i></summary><p>Continuously verify identity, device posture, and context before connecting a user to a specific application.</p><div class="tags"><span>Least privilege</span><span>Continuous trust</span><span>Private apps</span></div></details>
-        <details><summary><span>02</span><b>Secure Web Gateway</b><i></i></summary><p>Inspect web traffic, block malicious destinations, and enforce acceptable-use policy from every edge.</p><div class="tags"><span>URL filtering</span><span>TLS inspection</span><span>Malware defense</span></div></details>
-        <details><summary><span>03</span><b>Cloud Access Security Broker</b><i></i></summary><p>Discover cloud application use and govern how sensitive information moves through sanctioned services.</p><div class="tags"><span>Shadow IT</span><span>App control</span><span>Data policy</span></div></details>
-        <details><summary><span>04</span><b>Firewall as a Service</b><i></i></summary><p>Apply application-aware firewall policy consistently to users, branches, and cloud resources.</p><div class="tags"><span>IPS</span><span>DNS security</span><span>App control</span></div></details>
-        <details class="more-capability"><summary><span>05</span><b>Data Loss Prevention</b><i></i></summary><p>Identify sensitive data and stop accidental or intentional exposure across web, cloud, and private applications.</p><div class="tags"><span>Classification</span><span>Exact match</span><span>Coaching</span></div></details>
-        <details class="more-capability"><summary><span>06</span><b>Digital Experience Monitoring</b><i></i></summary><p>Measure the path from user to application and isolate performance issues before tickets arrive.</p><div class="tags"><span>Path analytics</span><span>Synthetic tests</span><span>User experience</span></div></details>
-        <button class="show-more" type="button" data-show-more>Show all capabilities <span>＋</span></button>
-      </div>
+    <section class="leader-quote section-dark" data-step="10">
+      <div class="quote-mark reveal">“</div><blockquote class="reveal">A secure edge succeeds when people get a faster path—and security gets better context.</blockquote><div class="leader reveal"><div class="leader-avatar">S/</div><p><strong>SASE.Net Architecture Council</strong><span>Platform strategy / network & security</span></p></div>
     </section>
 
-    <section class="quote-section section">
-      <div class="quote-signal reveal" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
-      <blockquote class="reveal">“The best security architecture is the one people never have to work around.”</blockquote>
-      <div class="quote-meta reveal"><div class="avatar small">NK</div><p><strong>Nora Keskin</strong><br><span>CEO, SASE.Net</span></p></div>
+    <section class="resources section-cyan" id="resources" data-step="11">
+      <div class="resource-tabs reveal" role="tablist" aria-label="SASE resources"><button role="tab" aria-selected="true" data-resource="pricing">Pricing</button><button role="tab" aria-selected="false" data-resource="support">Customer support</button><button role="tab" aria-selected="false" data-resource="know">What to know</button><button role="tab" aria-selected="false" data-resource="stories">Case studies</button></div>
+      <div class="resource-panel reveal" data-resource-panel><p class="section-kicker">Pricing / designed around your edge</p><h2>Start with your users and sites.<br><em>Scale from there.</em></h2><p>One platform subscription brings security and networking together without separate appliance cycles or disconnected policy engines.</p><a class="button button-dark" href="#contact">Request a design session <span>↗</span></a></div>
+      <div class="resource-accordions reveal"><details><summary>What is SASE?<i></i></summary><p>A practical introduction to the architecture, capabilities, and operating model.</p></details><details><summary>How does SASE support Zero Trust?<i></i></summary><p>Learn how identity-aware access becomes part of a wider service edge.</p></details><details><summary>What should a migration include?<i></i></summary><p>Map users, sites, applications, controls, dependencies, and success measures.</p></details><details><summary>How do teams measure value?<i></i></summary><p>Track user experience, policy consistency, incident response, and operational effort.</p></details></div>
+      <div class="resource-links reveal"><a href="#why">Field guide <span>↗</span></a><a href="#architecture">Architecture brief <span>↗</span></a><a href="#framework">Framework reference <span>↗</span></a><a href="#contact">Readiness workshop <span>↗</span></a></div>
     </section>
 
-    <section class="resources section" id="resources">
-      <div class="tabs reveal" role="tablist" aria-label="SASE information"><button role="tab" aria-selected="true" data-tab="pricing">Pricing</button><button role="tab" aria-selected="false" data-tab="support">Customer support</button><button role="tab" aria-selected="false" data-tab="know">What to know</button><button role="tab" aria-selected="false" data-tab="difference">Why SASE.Net</button></div>
-      <div class="tab-panel reveal" data-panel="pricing"><p class="section-label">PRICING THAT FOLLOWS YOUR EDGE</p><h2>Start with the users and sites you have. <em>Scale when you need.</em></h2><p>One subscription brings the platform together. No appliance sprawl, hidden feature tiers, or separate policy engines.</p><a class="button dark" href="#contact">Request a design session ↗</a></div>
-      <div class="tab-panel" data-panel="support" hidden><p class="section-label">HUMANS, 24/7</p><h2>Engineers who stay with the <em>problem.</em></h2><p>Direct access to network and security specialists for deployment, migration, and incident response.</p><a class="button dark" href="#contact">Meet support ↗</a></div>
-      <div class="tab-panel" data-panel="know" hidden><p class="section-label">A PRACTICAL MIGRATION</p><h2>Move at the pace your <em>network allows.</em></h2><p>Adopt SASE by user group, location, or capability and preserve existing investments during the transition.</p><a class="button dark" href="#contact">Plan migration ↗</a></div>
-      <div class="tab-panel" data-panel="difference" hidden><p class="section-label">ONE PASS. ONE POLICY.</p><h2>Convergence that is <em>architectural.</em></h2><p>Networking and security share context, telemetry, and enforcement rather than meeting in a dashboard alone.</p><a class="button dark" href="#contact">Compare platforms ↗</a></div>
-      <div class="resource-links reveal"><a href="#architecture"><span>01 / GUIDE</span>What is SASE?<b>↗</b></a><a href="#platform"><span>02 / BLUEPRINT</span>Designing for zero trust<b>↗</b></a><a href="#top"><span>03 / REPORT</span>The state of the secure edge<b>↗</b></a><a href="#contact"><span>04 / CHECKLIST</span>SASE readiness assessment<b>↗</b></a></div>
-    </section>
-
-    <section class="contact section" id="contact">
-      <div class="contact-copy reveal"><p class="section-label">YOUR NEXT EDGE</p><h2>Make the network<br><em>feel invisible.</em></h2><p>Tell us how your people, apps, and locations connect. We’ll map a practical path to SASE.</p></div>
-      <form class="contact-form reveal"><label>Work email<input type="email" name="email" placeholder="you@company.com" required></label><label>What are you securing?<select name="scope"><option>Remote and hybrid users</option><option>Branches and offices</option><option>Cloud applications</option><option>Everything</option></select></label><button class="button" type="submit">Start the conversation <span>↗</span></button><p data-form-status>We’ll respond within one business day.</p></form>
+    <section class="newsletter section-dark" id="contact" data-step="12">
+      <div class="newsletter-copy reveal"><p class="section-kicker">Edge notes / monthly</p><h2>Build the edge with<br><em>better context.</em></h2><p>Architecture patterns, migration lessons, and field notes for network and security leaders.</p></div>
+      <form class="newsletter-form reveal"><label for="email">Work email</label><div><input id="email" type="email" placeholder="you@company.com" required><button class="button" type="submit">Subscribe <span>↗</span></button></div><p data-form-status>No noise. One useful briefing each month.</p></form>
     </section>
   </main>
-  <footer><a class="brand" href="#top"><span class="brand-mark">S/</span><span>SASE.NET</span></a><p>Secure access. Service edge. One network.</p><p>© <span data-year></span> SASE.Net</p><a href="#top">Back to top ↑</a></footer>
+
+  <footer class="site-footer"><div><a class="brand" href="#top"><span class="brand-mark">S/</span><span>SASE.NET</span></a><p>Networking and security. One cloud-native edge.</p></div><nav aria-label="Footer navigation"><a href="#why">Why SASE</a><a href="#architecture">Architecture</a><a href="#framework">Framework</a><a href="#experts">Experts</a></nav><p>© <span data-year></span> SASE.Net</p></footer>
 </body>
 </html>
