@@ -21,7 +21,7 @@ nav?.addEventListener('click', (event) => {
 const year = document.querySelector('[data-year]');
 if (year) year.textContent = new Date().getFullYear();
 
-document.querySelectorAll('.framework-list details').forEach((item) => {
+document.querySelectorAll('.framework-list details, .attribute-faq details').forEach((item) => {
   item.addEventListener('toggle', () => {
     if (!item.open) return;
     item.parentElement.querySelectorAll('details').forEach((other) => {

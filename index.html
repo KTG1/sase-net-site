@@ -6,8 +6,8 @@
   <meta name="description" content="SASE.Net brings networking and security into one cloud-native edge for users, branches, applications, and data.">
   <meta name="theme-color" content="#07131d">
   <title>SASE.Net — The complete guide to a secure service edge</title>
-  <link rel="stylesheet" href="styles.css?v=20260727">
-  <script src="script.js?v=20260727" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260727-2">
+  <script src="script.js?v=20260727-2" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -97,6 +97,39 @@
           <button role="tab" aria-selected="true" data-attribute="zero-trust">Zero Trust Network Access</button><button role="tab" aria-selected="false" data-attribute="identity">Identity-based access control</button><button role="tab" aria-selected="false" data-attribute="web">Secure web gateway</button><button role="tab" aria-selected="false" data-attribute="cloud">Cloud access security broker</button><button role="tab" aria-selected="false" data-attribute="firewall">Firewall as a service</button><button role="tab" aria-selected="false" data-attribute="dlp">Data loss prevention</button><button role="tab" aria-selected="false" data-attribute="threat">Threat intelligence</button><button role="tab" aria-selected="false" data-attribute="policy">Unified policy engine</button><button role="tab" aria-selected="false" data-attribute="visibility">End-to-end visibility</button><button role="tab" aria-selected="false" data-attribute="performance">Performance optimization</button><button role="tab" aria-selected="false" data-attribute="scalability">Scalability & elasticity</button><button role="tab" aria-selected="false" data-attribute="complexity">Reduced complexity</button>
         </div>
         <div class="attribute-panel" data-attribute-panel><div class="panel-top"><span>ATTRIBUTE / 01</span><span>ACTIVE</span></div><div class="panel-diagram"><i>IDENTITY</i><b>VERIFY</b><i>APPLICATION</i></div><h3>Zero Trust Network Access</h3><p>Connect an authenticated user to a specific application after evaluating identity, device posture, location, and risk. Trust is continuously reassessed throughout the session.</p><div class="panel-tags"><span>Least privilege</span><span>App-level access</span><span>Continuous trust</span></div></div>
+      </div>
+      <div class="attribute-faq reveal" id="attribute-faq" aria-labelledby="attribute-faq-title">
+        <div class="attribute-faq-intro">
+          <p class="section-kicker">Attribute questions / direct answers</p>
+          <h3 id="attribute-faq-title">How the controls<br><em>work together.</em></h3>
+          <p>Open an attribute tab to understand what it controls, where it runs, and how it contributes to a complete SASE architecture.</p>
+        </div>
+        <div class="attribute-faq-tabs">
+          <details open>
+            <summary><span>ZTNA</span><strong>How does Zero Trust Network Access replace a traditional VPN?</strong><i></i></summary>
+            <div class="attribute-answer"><p>ZTNA connects an authenticated user to a specific application instead of placing the device broadly on the network. Identity, device posture, location, and risk are checked before access and throughout the session.</p><div><b>Least privilege</b><b>Application-level access</b><b>Continuous verification</b></div></div>
+          </details>
+          <details>
+            <summary><span>SWG</span><strong>What does a Secure Web Gateway inspect?</strong><i></i></summary>
+            <div class="attribute-answer"><p>An SWG evaluates web requests, destinations, files, and encrypted sessions against malware, acceptable-use, and data-protection policy at the service edge nearest the user.</p><div><b>URL control</b><b>Threat prevention</b><b>TLS inspection</b></div></div>
+          </details>
+          <details>
+            <summary><span>CASB</span><strong>How does CASB govern cloud application use?</strong><i></i></summary>
+            <div class="attribute-answer"><p>CASB discovers sanctioned and unsanctioned SaaS use, applies controls to sensitive actions, and combines application context with identity and data classification.</p><div><b>SaaS discovery</b><b>App governance</b><b>Data context</b></div></div>
+          </details>
+          <details>
+            <summary><span>FWaaS</span><strong>Why deliver firewall policy as a cloud service?</strong><i></i></summary>
+            <div class="attribute-answer"><p>Firewall as a Service gives users, branches, and cloud workloads the same stateful controls without deploying and maintaining a separate appliance stack at every location.</p><div><b>Unified rules</b><b>Elastic capacity</b><b>Global enforcement</b></div></div>
+          </details>
+          <details>
+            <summary><span>DLP</span><strong>Where does Data Loss Prevention apply policy?</strong><i></i></summary>
+            <div class="attribute-answer"><p>DLP classifies sensitive content and controls its movement across web, SaaS, private applications, and managed or unmanaged devices from the same inspection path.</p><div><b>Classification</b><b>Inline controls</b><b>Consistent policy</b></div></div>
+          </details>
+          <details>
+            <summary><span>SD-WAN</span><strong>How does SD-WAN contribute to SASE?</strong><i></i></summary>
+            <div class="attribute-answer"><p>SD-WAN measures available transports and selects application-aware paths into the service edge. SASE adds the shared security, identity, and data controls that follow that traffic.</p><div><b>Path selection</b><b>Application awareness</b><b>Branch connectivity</b></div></div>
+          </details>
+        </div>
       </div>
     </section>
 
