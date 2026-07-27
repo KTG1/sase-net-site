@@ -80,6 +80,21 @@ document.querySelectorAll('[data-compare]').forEach((button) => {
   });
 });
 
+const frameworkFilters = [...document.querySelectorAll('[data-framework-filter]')];
+const frameworkItems = [...document.querySelectorAll('[data-framework-category]')];
+frameworkFilters.forEach((button) => {
+  button.addEventListener('click', () => {
+    const filter = button.dataset.frameworkFilter;
+    frameworkFilters.forEach((other) => other.setAttribute('aria-selected', String(other === button)));
+    frameworkItems.forEach((item) => {
+      item.hidden = filter !== 'all' && item.dataset.frameworkCategory !== filter;
+      item.open = false;
+    });
+    const firstVisible = frameworkItems.find((item) => !item.hidden);
+    if (firstVisible) firstVisible.open = true;
+  });
+});
+
 const resources = {
   pricing: ['Cost model / consolidate the full stack', 'Count the products<br><em>you can retire.</em>', 'Model hardware, bandwidth, licenses, upgrades, facilities, integration, and administrative effort—not only the new subscription. The financial case improves when appliance refreshes and duplicated operations are included.', 'Model your edge'],
   support: ['Operating model / one shared platform', 'Join network and security<br><em>around shared outcomes.</em>', 'Use shared runbooks, one change process, and combined experience-and-security measures so converged technology is matched by converged operations.', 'Plan the operating model'],
