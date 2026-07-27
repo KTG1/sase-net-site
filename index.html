@@ -6,8 +6,8 @@
   <meta name="description" content="SASE.Net brings networking and security into one cloud-native edge for users, branches, applications, and data.">
   <meta name="theme-color" content="#07131d">
   <title>SASE.Net — The complete guide to a secure service edge</title>
-  <link rel="stylesheet" href="styles.css?v=20260727-2">
-  <script src="script.js?v=20260727-2" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260727-3">
+  <script src="script.js?v=20260727-3" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -15,7 +15,7 @@
     <a class="brand" href="#top" aria-label="SASE.Net home"><span class="brand-mark">S/</span><span>SASE.NET</span></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span class="sr-only">Menu</span></button>
     <nav id="site-nav" aria-label="Primary navigation">
-      <a href="#why">Why SASE</a><a href="#architecture">Architecture</a><a href="#framework">Framework</a><a href="#experts">Experts</a>
+      <a href="#why">Why SASE</a><a href="#architecture">Architecture</a><a href="#framework">Framework</a><a href="#playbook">Playbook</a>
       <a class="button button-small" href="#contact">Plan your edge <span>↗</span></a>
     </nav>
   </header>
@@ -43,12 +43,13 @@
 
     <section class="context section-light" id="why" data-step="01">
       <div class="section-kicker reveal">Why the edge changed</div>
-      <div class="context-heading reveal"><h2>Work moved everywhere.<br><em>Security should too.</em></h2><p>Applications left the data center. People work across homes, branches, airports, and cloud regions. SASE makes policy portable—following identity and context to the nearest point of presence.</p></div>
+      <div class="context-heading reveal"><h2>Work moved everywhere.<br><em>Security should too.</em></h2><p>Secure Access Service Edge is a cloud-delivered architecture that converges wide-area networking and security into one identity-driven service. It moves inspection from the corporate data center to distributed points of presence closer to users, devices, and applications.</p></div>
+      <div class="definition-strip reveal"><article><span>Meaning</span><strong>Secure Access<br>Service Edge</strong></article><article><span>Pronunciation</span><strong>“Sassy”</strong><p>The acronym joins secure, identity-based access with the distributed cloud service edge.</p></article><article><span>Model introduced</span><strong>2019</strong><p>Gartner named the model as applications, users, and sensitive data moved beyond the traditional perimeter.</p></article></div>
       <div class="context-grid">
         <article class="media-card reveal"><span class="card-label">SASE explained / 04:12</span><div class="media-signal"><i></i><i></i><i></i><b>▶</b></div><h3>From perimeter to service edge</h3><p>A visual briefing on why networking and security now converge in the cloud.</p></article>
         <article class="media-card media-card-blue reveal"><span class="card-label">Architecture review / 06:40</span><div class="mini-map"><span>USER</span><i></i><b>EDGE</b><i></i><span>APP</span></div><h3>One pass, shared context</h3><p>See how a unified policy engine evaluates traffic once and acts with full context.</p></article>
       </div>
-      <p class="context-note reveal">The result is a simpler operating model: fewer policy seams, faster application paths, and one source of truth for every access decision.</p>
+      <p class="context-note reveal">SASE treats identity as the new perimeter. It authenticates the requester, evaluates device posture, location, and risk, then applies threat prevention, data protection, and access policy in a single pass at the nearest service edge.</p>
     </section>
 
     <section class="trust section-dark" data-step="02">
@@ -79,19 +80,19 @@
       <div class="section-heading reveal"><h2>Less stack.<br><em>More control.</em></h2><p>Consolidate what used to be separate appliances, consoles, and policy languages into a service delivered close to every user and application.</p></div>
       <div class="benefit-stage">
         <div class="benefit-visual reveal"><div class="benefit-core">S/</div><span class="beam beam-a"></span><span class="beam beam-b"></span><span class="beam beam-c"></span><span class="beam beam-d"></span><b class="satellite sat-a">USERS</b><b class="satellite sat-b">SITES</b><b class="satellite sat-c">CLOUD</b><b class="satellite sat-d">DATA</b></div>
-        <div class="benefit-list reveal"><article><span>01</span><h3>One policy language</h3><p>Define access and inspection once, then apply it consistently everywhere.</p></article><article><span>02</span><h3>Direct application paths</h3><p>Connect through the nearest healthy edge instead of backhauling traffic.</p></article><article><span>03</span><h3>Shared security context</h3><p>Identity, device posture, application, and data sensitivity inform one decision.</p></article><article><span>04</span><h3>Operational clarity</h3><p>Use unified telemetry to troubleshoot experience and enforce policy faster.</p></article><article><span>05</span><h3>Elastic capacity</h3><p>Scale cloud-delivered controls without deploying another appliance stack.</p></article></div>
+        <div class="benefit-list reveal"><article><span>01</span><h3>Reduced complexity</h3><p>Replace separate routers, proxies, VPN concentrators, firewalls, and cloud controls with one policy and management plane.</p></article><article><span>02</span><h3>Consistent security</h3><p>Apply identical policy to users, devices, branches, and applications regardless of physical location.</p></article><article><span>03</span><h3>Lower-latency paths</h3><p>Inspect at the nearest healthy point of presence instead of backhauling cloud traffic through a data center.</p></article><article><span>04</span><h3>Zero-trust access</h3><p>Grant least-privilege access to specific applications without broad network reachability.</p></article><article><span>05</span><h3>Unified visibility</h3><p>Trace web, SaaS, private-application, route-health, and policy events in one identity-attributed record.</p></article><article><span>06</span><h3>Faster response</h3><p>Correlate user, device, traffic, threat, and data context without stitching together separate consoles.</p></article><article><span>07</span><h3>Elastic scale</h3><p>Add users, sites, geographies, and inspection capacity without another appliance procurement cycle.</p></article><article><span>08</span><h3>Lower operating burden</h3><p>Reduce hardware refreshes, duplicated rules, maintenance windows, and product-to-product integration work.</p></article></div>
       </div>
     </section>
 
     <section class="how section-light" data-step="05">
       <div class="section-kicker reveal">How to use SASE</div>
       <div class="section-heading reveal"><h2>Adopt by mission.<br><em>Converge by design.</em></h2><p>Start where the operational need is clearest, then bring each use case into the same policy and telemetry plane.</p></div>
-      <div class="mission-grid reveal"><article><b>01</b><span>Remote work</span><p>Replace broad VPN access with application-specific, identity-aware connections.</p></article><article><b>02</b><span>Branch modernization</span><p>Connect locations through lightweight edges and cloud-delivered controls.</p></article><article><b>03</b><span>Cloud adoption</span><p>Govern SaaS usage, data movement, and private application access.</p></article><article><b>04</b><span>Security consolidation</span><p>Move web, firewall, access, and data policy into one inspection path.</p></article></div>
+      <div class="mission-grid reveal"><article><b>01</b><span>Remote & hybrid work</span><p>Give every employee the same policy and application performance from offices, homes, and mobile locations.</p></article><article><b>02</b><span>Branch & retail</span><p>Replace per-site appliance stacks with a lightweight edge and centrally delivered cloud controls.</p></article><article><b>03</b><span>Cloud & SaaS adoption</span><p>Create direct, inspected paths to public cloud and SaaS while retaining application and data visibility.</p></article><article><b>04</b><span>VPN replacement</span><p>Move from broad network-level access to deny-by-default, per-application ZTNA connections.</p></article><article><b>05</b><span>Vendor consolidation</span><p>Bring networking, web, firewall, access, and data policy into one operating model.</p></article><article><b>06</b><span>M&amp;A integration</span><p>Enroll acquired users and sites through identity and edge policy instead of rebuilding the inherited network.</p></article></div>
     </section>
 
     <section class="attributes section-dark" id="architecture" data-step="06">
       <div class="section-kicker reveal">Core attributes of SASE</div>
-      <div class="section-heading reveal"><h2>A complete edge is more<br>than a <em>feature list.</em></h2><p>The architecture matters: cloud-native delivery, distributed enforcement, shared context, and continuous verification.</p></div>
+      <div class="section-heading reveal"><h2>A complete edge is more<br>than a <em>feature list.</em></h2><p>A complete SASE platform converges five core technologies—SD-WAN, SWG, CASB, FWaaS, and ZTNA—inside a single-pass architecture governed by one identity-aware policy engine.</p></div>
       <div class="attribute-console reveal">
         <div class="attribute-rail" role="tablist" aria-label="SASE core attributes">
           <button role="tab" aria-selected="true" data-attribute="zero-trust">Zero Trust Network Access</button><button role="tab" aria-selected="false" data-attribute="identity">Identity-based access control</button><button role="tab" aria-selected="false" data-attribute="web">Secure web gateway</button><button role="tab" aria-selected="false" data-attribute="cloud">Cloud access security broker</button><button role="tab" aria-selected="false" data-attribute="firewall">Firewall as a service</button><button role="tab" aria-selected="false" data-attribute="dlp">Data loss prevention</button><button role="tab" aria-selected="false" data-attribute="threat">Threat intelligence</button><button role="tab" aria-selected="false" data-attribute="policy">Unified policy engine</button><button role="tab" aria-selected="false" data-attribute="visibility">End-to-end visibility</button><button role="tab" aria-selected="false" data-attribute="performance">Performance optimization</button><button role="tab" aria-selected="false" data-attribute="scalability">Scalability & elasticity</button><button role="tab" aria-selected="false" data-attribute="complexity">Reduced complexity</button>
@@ -129,6 +130,22 @@
             <summary><span>SD-WAN</span><strong>How does SD-WAN contribute to SASE?</strong><i></i></summary>
             <div class="attribute-answer"><p>SD-WAN measures available transports and selects application-aware paths into the service edge. SASE adds the shared security, identity, and data controls that follow that traffic.</p><div><b>Path selection</b><b>Application awareness</b><b>Branch connectivity</b></div></div>
           </details>
+          <details>
+            <summary><span>CLOUD</span><strong>Is SASE primarily cloud-based technology?</strong><i></i></summary>
+            <div class="attribute-answer"><p>Yes. Cloud delivery, elastic scaling, and globally distributed points of presence are defining characteristics. Branch edge devices may remain physical, and some data-center enforcement may remain local, but inspection, policy, and management run in the cloud.</p><div><b>Cloud native</b><b>Elastic scale</b><b>Global edge</b></div></div>
+          </details>
+          <details>
+            <summary><span>VPN</span><strong>Does SASE replace a VPN?</strong><i></i></summary>
+            <div class="attribute-answer"><p>For most enterprise remote access, ZTNA can replace broad VPN connectivity application by application. Legacy protocols may require temporary VPN coexistence, but the target model is narrower access, closer inspection, and elastic scale.</p><div><b>App-level access</b><b>No backhaul</b><b>Phased migration</b></div></div>
+          </details>
+          <details>
+            <summary><span>FIREWALL</span><strong>Can SASE replace an on-premises firewall?</strong><i></i></summary>
+            <div class="attribute-answer"><p>FWaaS can replace appliance firewalls for distributed user, branch, and internet traffic. Local firewalls may remain useful for east-west data-center traffic and latency-sensitive internal segmentation.</p><div><b>Distributed traffic</b><b>Cloud enforcement</b><b>Hybrid coverage</b></div></div>
+          </details>
+          <details>
+            <summary><span>5G / IoT</span><strong>How do 5G and IoT fit into SASE?</strong><i></i></summary>
+            <div class="attribute-answer"><p>5G provides another SD-WAN transport for primary, backup, or temporary sites without bypassing security. IoT devices use agentless, network-level identification, segmentation, behavioral monitoring, and threat prevention at the site edge.</p><div><b>Wireless WAN</b><b>Agentless policy</b><b>Device segmentation</b></div></div>
+          </details>
         </div>
       </div>
     </section>
@@ -140,7 +157,7 @@
         <div class="architecture-cloud"><small>GLOBAL SERVICE EDGE</small><strong>SASE.NET</strong><div><span>IDENTITY</span><span>ROUTING</span><span>INSPECTION</span><span>DATA POLICY</span></div></div>
         <div class="architecture-apps"><span>SAAS</span><span>PRIVATE APP</span><span>PUBLIC CLOUD</span></div>
       </div>
-      <div class="architecture-copy reveal"><h2>One cloud-native<br><em>control plane.</em></h2><p>Traffic enters the closest service edge, where networking and security policy execute in a single pass. Shared telemetry returns to one console, preserving global consistency without centralizing the traffic path.</p><ul><li>Distributed points of presence</li><li>Single-pass policy enforcement</li><li>Application-aware routing</li><li>Unified operations and analytics</li></ul></div>
+      <div class="architecture-copy reveal"><h2>One cloud-native<br><em>control plane.</em></h2><p>Traffic enters the closest service edge, the platform decrypts the session once, applies every relevant networking and security function in parallel, and forwards traffic to its destination. Policy is centralized; the traffic path is not.</p><ul><li>Identity-driven policy for users, devices, and services</li><li>Elastic cloud-native delivery instead of fixed appliances</li><li>Global edge distribution close to users and applications</li><li>Universal coverage for headquarters, branches, remote users, and IoT</li></ul></div>
     </section>
 
     <section class="compare section-muted" data-step="08">
@@ -148,6 +165,7 @@
       <h2 class="section-title reveal">SASE, Zero Trust,<br>and <em>SD-WAN.</em></h2>
       <div class="compare-tabs reveal" role="tablist" aria-label="Compare SASE concepts"><button role="tab" aria-selected="true" data-compare="why">Why it matters</button><button role="tab" aria-selected="false" data-compare="baseline">SASE baseline</button><button role="tab" aria-selected="false" data-compare="use">How to use it</button></div>
       <div class="compare-panel reveal" data-compare-panel><article><span>SASE</span><p>The cloud-delivered architecture that converges networking and security.</p></article><article><span>Zero Trust</span><p>The access principle: verify explicitly and grant only the access required.</p></article><article><span>SD-WAN</span><p>The networking capability that selects efficient application-aware paths.</p></article></div>
+      <div class="vpn-compare reveal"><div><span>Access scope</span><strong>VPN</strong><p>Broad network-level reachability after tunnel authentication.</p><strong>SASE</strong><p>Per-application access after identity and context verification.</p></div><div><span>Traffic path</span><strong>VPN</strong><p>Backhauls cloud traffic through a central concentrator.</p><strong>SASE</strong><p>Inspects at the nearest point of presence and routes directly.</p></div><div><span>Security depth</span><strong>VPN</strong><p>Encrypts the tunnel but does not inspect its contents.</p><strong>SASE</strong><p>Applies threat prevention, data protection, and access policy.</p></div><div><span>Scale model</span><strong>VPN</strong><p>Expands through concentrator and hardware capacity.</p><strong>SASE</strong><p>Absorbs users and traffic through an elastic cloud edge.</p></div></div>
     </section>
 
     <section class="framework section-light" id="framework" data-step="09">
@@ -158,23 +176,45 @@
       </div>
     </section>
 
-    <section class="leader-quote section-dark" data-step="10">
+    <section class="playbook section-dark" id="playbook" data-step="10">
+      <div class="section-kicker reveal">Implementation playbook</div>
+      <div class="section-heading reveal"><h2>Convergence is a program.<br><em>Not a product switch.</em></h2><p>SASE adoption joins network and security operations around one platform. A successful migration inventories the estate, proves the architecture, phases the traffic, and measures outcomes against a known baseline.</p></div>
+      <div class="challenge-block reveal">
+        <div><p class="section-kicker">Challenges to plan for</p><h3>Seven realities<br>before cutover.</h3></div>
+        <div class="challenge-grid"><article><span>TEAM</span><strong>Organizational silos</strong><p>Networking and security teams must share ownership, runbooks, change control, and outcome metrics.</p></article><article><span>PLATFORM</span><strong>Vendor maturity</strong><p>Some portfolios chain acquired products instead of delivering one policy engine and one inspection path.</p></article><article><span>MIGRATION</span><strong>Legacy complexity</strong><p>Existing appliances, dependencies, and accumulated rule sets require deliberate coexistence and retirement criteria.</p></article><article><span>PRIVACY</span><strong>TLS inspection</strong><p>Decryption policy must account for privacy, certificate management, regulatory scope, and documented exceptions.</p></article><article><span>EDGE</span><strong>Geographic reach</strong><p>Provider points of presence must align with the most remote user, branch, cloud, and application locations.</p></article><article><span>RISK</span><strong>Provider dependency</strong><p>Consolidation concentrates roadmap, pricing, availability, and support dependency in one platform.</p></article><article><span>SKILLS</span><strong>Operating-model change</strong><p>Teams trained on appliance CLIs need identity, cloud policy, application, and digital-experience skills.</p></article></div>
+      </div>
+      <div class="playbook-layout reveal">
+        <div class="playbook-intro"><p class="section-kicker">Eight implementation practices</p><h3>Move in evidence-led phases.</h3><p>A common sequence begins with remote users through ZTNA and SWG, extends to branches through SD-WAN, and finishes with data-center and cloud workloads.</p><div class="provider-check"><span>Provider proof points</span><b>Single-pass architecture</b><b>PoP footprint & backbone</b><b>Five native core components</b><b>One policy engine</b><b>Identity & SIEM compatibility</b><b>Migration tooling</b><b>Transparent three-year cost</b></div></div>
+        <div class="playbook-list">
+          <details open><summary><span>01</span>Start with a traffic and asset baseline<i></i></summary><p>Measure current flows, application dependencies, user experience, threat outcomes, and cost before migration. The baseline exposes forgotten dependencies and proves improvement.</p></details>
+          <details><summary><span>02</span>Sequence by risk and value<i></i></summary><p>Begin with a bounded use case such as remote access, where VPN replacement can improve access control and experience without moving every site at once.</p></details>
+          <details><summary><span>03</span>Unify identity before enforcement<i></i></summary><p>Consolidate identity sources, group data, device posture, and multi-factor authentication before ZTNA policy depends on those signals.</p></details>
+          <details><summary><span>04</span>Run coexistence deliberately<i></i></summary><p>Operate SASE beside legacy controls only with explicit entry, validation, cutover, and retirement criteria for each user group, site, and application.</p></details>
+          <details><summary><span>05</span>Convert policies, then simplify<i></i></summary><p>Translate required legacy rules into the new engine, verify behavior, then remove duplicated, contradictory, and obsolete policy.</p></details>
+          <details><summary><span>06</span>Adopt zero trust incrementally<i></i></summary><p>Observe real access patterns first, then tighten application access toward least privilege with evidence rather than assumptions.</p></details>
+          <details><summary><span>07</span>Train teams across the platform<i></i></summary><p>Cross-train network staff on security policy and security staff on routing, performance, and application behavior.</p></details>
+          <details><summary><span>08</span>Measure outcomes continuously<i></i></summary><p>Track user experience, blocked threats, policy coverage, response time, operational effort, and cost against the baseline every quarter.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="leader-quote section-dark" data-step="11">
       <div class="quote-mark reveal">“</div><blockquote class="reveal">A secure edge succeeds when people get a faster path—and security gets better context.</blockquote><div class="leader reveal"><div class="leader-avatar">S/</div><p><strong>SASE.Net Architecture Council</strong><span>Platform strategy / network & security</span></p></div>
     </section>
 
-    <section class="resources section-cyan" id="resources" data-step="11">
-      <div class="resource-tabs reveal" role="tablist" aria-label="SASE resources"><button role="tab" aria-selected="true" data-resource="pricing">Pricing</button><button role="tab" aria-selected="false" data-resource="support">Customer support</button><button role="tab" aria-selected="false" data-resource="know">What to know</button><button role="tab" aria-selected="false" data-resource="stories">Case studies</button></div>
-      <div class="resource-panel reveal" data-resource-panel><p class="section-kicker">Pricing / designed around your edge</p><h2>Start with your users and sites.<br><em>Scale from there.</em></h2><p>One platform subscription brings security and networking together without separate appliance cycles or disconnected policy engines.</p><a class="button button-dark" href="#contact">Request a design session <span>↗</span></a></div>
-      <div class="resource-accordions reveal"><details><summary>What is SASE?<i></i></summary><p>A practical introduction to the architecture, capabilities, and operating model.</p></details><details><summary>How does SASE support Zero Trust?<i></i></summary><p>Learn how identity-aware access becomes part of a wider service edge.</p></details><details><summary>What should a migration include?<i></i></summary><p>Map users, sites, applications, controls, dependencies, and success measures.</p></details><details><summary>How do teams measure value?<i></i></summary><p>Track user experience, policy consistency, incident response, and operational effort.</p></details></div>
-      <div class="resource-links reveal"><a href="#why">Field guide <span>↗</span></a><a href="#architecture">Architecture brief <span>↗</span></a><a href="#framework">Framework reference <span>↗</span></a><a href="#contact">Readiness workshop <span>↗</span></a></div>
+    <section class="resources section-cyan" id="resources" data-step="12">
+      <div class="resource-tabs reveal" role="tablist" aria-label="SASE resources"><button role="tab" aria-selected="true" data-resource="pricing">Cost model</button><button role="tab" aria-selected="false" data-resource="support">Operating model</button><button role="tab" aria-selected="false" data-resource="know">Readiness</button><button role="tab" aria-selected="false" data-resource="stories">Provider selection</button></div>
+      <div class="resource-panel reveal" data-resource-panel><p class="section-kicker">Cost model / consolidate the full stack</p><h2>Count the products<br><em>you can retire.</em></h2><p>Model hardware, bandwidth, licenses, upgrades, facilities, integration, and administrative effort—not only the new subscription. The financial case improves when appliance refreshes and duplicated operations are included.</p><a class="button button-dark" href="#contact">Model your edge <span>↗</span></a></div>
+      <div class="resource-accordions reveal"><details><summary>Is SASE a single product to purchase?<i></i></summary><p>No. SASE is an architectural model implemented by a platform, and adoption is a phased migration program rather than a one-time procurement event.</p></details><details><summary>Is SASE only rebranded SD-WAN?<i></i></summary><p>No. SD-WAN is the networking foundation. SASE adds SWG, CASB, FWaaS, ZTNA, shared context, and a unified policy engine.</p></details><details><summary>Are SASE and SSE identical?<i></i></summary><p>No. Security Service Edge covers the security side of the model; SASE combines SSE capabilities with SD-WAN networking and site connectivity.</p></details><details><summary>Does every bundled portfolio qualify as SASE?<i></i></summary><p>No. The defining test is convergence: one cloud-delivered service, one policy plane, shared context, and single-pass inspection rather than sequential product chaining.</p></details><details><summary>Does SASE eliminate every on-premises control immediately?<i></i></summary><p>No. Data-center segmentation, niche protocols, and specific compliance controls can remain local during—and sometimes after—a deliberate migration.</p></details></div>
+      <div class="resource-links reveal"><a href="#why">Meaning & definition <span>↗</span></a><a href="#architecture">Components & FAQ <span>↗</span></a><a href="#framework">Framework reference <span>↗</span></a><a href="#playbook">Implementation playbook <span>↗</span></a></div>
     </section>
 
-    <section class="newsletter section-dark" id="contact" data-step="12">
+    <section class="newsletter section-dark" id="contact" data-step="13">
       <div class="newsletter-copy reveal"><p class="section-kicker">Edge notes / monthly</p><h2>Build the edge with<br><em>better context.</em></h2><p>Architecture patterns, migration lessons, and field notes for network and security leaders.</p></div>
       <form class="newsletter-form reveal"><label for="email">Work email</label><div><input id="email" type="email" placeholder="you@company.com" required><button class="button" type="submit">Subscribe <span>↗</span></button></div><p data-form-status>No noise. One useful briefing each month.</p></form>
     </section>
   </main>
 
-  <footer class="site-footer"><div><a class="brand" href="#top"><span class="brand-mark">S/</span><span>SASE.NET</span></a><p>Networking and security. One cloud-native edge.</p></div><nav aria-label="Footer navigation"><a href="#why">Why SASE</a><a href="#architecture">Architecture</a><a href="#framework">Framework</a><a href="#experts">Experts</a></nav><p>© <span data-year></span> SASE.Net</p></footer>
+  <footer class="site-footer"><div><a class="brand" href="#top"><span class="brand-mark">S/</span><span>SASE.NET</span></a><p>Networking and security. One cloud-native edge.</p></div><nav aria-label="Footer navigation"><a href="#why">Why SASE</a><a href="#architecture">Architecture</a><a href="#framework">Framework</a><a href="#playbook">Playbook</a></nav><p>© <span data-year></span> SASE.Net</p></footer>
 </body>
 </html>

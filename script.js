@@ -21,7 +21,7 @@ nav?.addEventListener('click', (event) => {
 const year = document.querySelector('[data-year]');
 if (year) year.textContent = new Date().getFullYear();
 
-document.querySelectorAll('.framework-list details, .attribute-faq details').forEach((item) => {
+document.querySelectorAll('.framework-list details, .attribute-faq details, .playbook-list details, .resource-accordions details').forEach((item) => {
   item.addEventListener('toggle', () => {
     if (!item.open) return;
     item.parentElement.querySelectorAll('details').forEach((other) => {
@@ -81,10 +81,10 @@ document.querySelectorAll('[data-compare]').forEach((button) => {
 });
 
 const resources = {
-  pricing: ['Pricing / designed around your edge', 'Start with your users and sites.<br><em>Scale from there.</em>', 'One platform subscription brings security and networking together without separate appliance cycles or disconnected policy engines.', 'Request a design session'],
-  support: ['Customer support / engineers included', 'Architecture help before,<br><em>during, and after.</em>', 'Work with engineers who understand policy, routing, applications, and migration dependencies—not a queue that sees only one product feature.', 'Meet the engineering team'],
-  know: ['What to know / readiness brief', 'Map the journey<br><em>before the migration.</em>', 'Inventory users, sites, applications, controls, traffic paths, and success measures. A clear baseline turns convergence into an operational program.', 'Get the readiness brief'],
-  stories: ['Case studies / patterns from the field', 'See how teams<br><em>converge the edge.</em>', 'Explore practical patterns for remote access, branch modernization, cloud governance, and security-stack consolidation.', 'Explore the field notes']
+  pricing: ['Cost model / consolidate the full stack', 'Count the products<br><em>you can retire.</em>', 'Model hardware, bandwidth, licenses, upgrades, facilities, integration, and administrative effort—not only the new subscription. The financial case improves when appliance refreshes and duplicated operations are included.', 'Model your edge'],
+  support: ['Operating model / one shared platform', 'Join network and security<br><em>around shared outcomes.</em>', 'Use shared runbooks, one change process, and combined experience-and-security measures so converged technology is matched by converged operations.', 'Plan the operating model'],
+  know: ['Readiness / inventory before policy', 'Map every user, asset,<br><em>application, and path.</em>', 'Include contractors, service accounts, shadow IT, unmanaged devices, branch traffic, cloud workloads, and direct paths that could bypass inspection.', 'Build the readiness baseline'],
+  stories: ['Provider selection / prove the architecture', 'Test the edge<br><em>before you trust it.</em>', 'Evaluate single-pass inspection, global reach, component ownership, policy unification, identity compatibility, migration tooling, service levels, interoperability, and total cost.', 'Run a provider workshop']
 };
 
 const resourcePanel = document.querySelector('[data-resource-panel]');
